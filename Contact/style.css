@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*custom styles*/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+a{
+    text-decoration: none;
+}
+/*Header*/
+.header{
+    background-color: #012D5B;
+    padding: 18px 0;
+}
+.head-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.nav-head-left a{
+    margin-left: 32px;
+    color: white;
+    font-size: 12px;
+}
+.nav-head-left span{
+    color: white;
+    font-size: 12px;
+}
+.nav-head-right a{
+    margin-left:12px;
+    color: white;
+    font-size: 12px;
+}
+/*Sub-Heading*/
+.dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #FD656B;
+    border-radius: 50%;
+}
+.sub-para{
+    font-size: 26px;
+    color: #012D5B;
+    font-weight: 800;
+    margin-left: 25px;
+}
+.sub-head-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-head-nav a{
+    font-size: 12px;
+    margin-left: 32px;
+    color: #153F68;
+}
+.sub-head-contact{
+    background-color: #FD656B;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.sub-head-nav .sub-head-contact{
+    color: white;
+}
+.sub-head{
+    margin: 22px 0;
+}
+/* Head-About-image*/
+.about{
+    position: relative;
+}
+.about img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+.head-about{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 28px;
+    color: white;
+    font-weight: 800;
+}
+/*Google-map*/
+.contact-getintouch-section{
+    margin-bottom: 52px;
+}
+.contact-map{
+    margin-left: 202px;
+    margin-top: 82px;
+    margin-bottom: 42px;
+}
+.contact-getintouch-flex{
+    display: flex;
+    margin-left: 152px;
+}
+.contact-col{
+    width: 60%;
+}
+.contact-heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-message{
+    border: 1px solid grey;
+    padding-bottom: 92px;
+    margin: 22px 0;
+    font-size: 10px;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: grey;
+
+}
+.contact-info{
+    display: flex;
+    font-size: 10px;
+    margin: 22px 0;  
+}
+.contact-name,.contact-email{
+    border: 1px solid grey;
+    width: 50%;
+    padding-bottom: 22px;
+    font-size: 10px;
+    margin-right: 1.5%;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: grey;
+}
+.contact-email{
+    margin-right: 0;
+}
+.contact-subject{
+    border: 1px solid grey;
+    padding-bottom: 22px;
+    font-size: 10px;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: grey;  
+    margin-bottom: 32px;
+}
+.contact-send{
+    font-size: 10px;
+    color: #FD656B;
+    padding: 8px 18px;
+    border: 1px solid #FD656B;
+}
+.contact-sub-col-flex{
+    width: 30%;
+    display: flex;
+    margin-left: 52px;
+    margin-top: 42px;
+}
+.contact-sub-col-flex a{
+    display: block;
+    margin-bottom: 42px;
+    color: gray;
+}
+.contact-text{
+    font-size: 13px;
+    font-weight: 500;
+}
+.contact-address{
+    font-size: 12px;
+    color: grey;
+    line-height: 1.7;
+}
+.sub-col-icon{
+    margin-right: 12px;
+}
+.parent-sub{
+    margin-bottom: 22px;
+}
+/*Request section*/
+.request{
+    background-color: #012D5B;
+    padding: 62px 0;
+}
+.request-callback-flex{
+    display: flex;
+    margin-left: 162px; 
+}
+.col-4-1{
+    width: 25%;
+    margin-right: 2.5%;
+}
+h6{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.request-para{
+    font-size: 10px;
+    color: #F8FAFE;
+    line-height: 1.5;
+    margin-top: 22px;
+}
+.col-4-2{
+    width: 55%;
+}
+.request-span-flex{
+    display: flex;
+}
+.request-span{
+    border: 1px solid grey;
+    height: 42px;
+    width: 100%;
+    color: white;
+    padding-left: 8px;
+   line-height: 42px;
+    margin-right: 12px;
+    font-size: 8px;
+}
+.last-request-span-flex{
+    display: flex;
+    margin-top: 22px;
+}
+.services-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.services-flex a{
+    color: grey;
+    margin-right: 12px;
+}
+.last-span{
+    width: 65%;
+    margin-right: 12px;
+    border: 1px solid grey;
+    height: 42px;
+    line-height: 42px;
+    color: gray;
+    font-size: 10px;
+    padding-left: 8px;
+}
+.send{
+    display: inline-block;
+    width: 30%;
+    border: 1px solid grey;
+    color: white;
+    font-size: 10px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #FD656B;
+}
+/*Footer*/
+.footer{
+    margin: 62px 0;
+}
+.foot-flex{
+    display: flex;
+    margin-left: 162px;
+}
+.foot-col{
+    width: 20%;
+    margin-right: 6.5%;
+}
+.foot-head{
+    margin-left: 0;
+}
+.foot-para{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #A8ADB7;
+}
+.foot-nav a{
+    color: #222222;
+    margin-right: 4px;
+}
+.foot-nav{
+    font-size: 12px;
+    margin-top: 24px;
+}
+.end{
+    width: 17%;
+    margin-top: 26px;
+    margin-right: 1.5%;
+
+}
+.end-two{
+    margin-right: 3%;
+}
+.foot-col-end-para{
+    font-size: 14px;
+    color: #44658A;
+    margin-bottom: 22px;
+}
+.foot-para-end{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #A8ADB7;
+    margin-bottom: 12px;
+}
+/*Footer copyright*/
+.foot-line{
+    height: 1px;
+    background-color: #DBEAFD;
+    width: 800px;
+    margin: 32px auto;
+}
+.foot-small-section{
+    text-align: center;
+}
+.foot-final{
+    color: #FD656B;
+}
+.foot-span-color{
+    color: #FD656B;
+}
+.foot-small{
+    color: grey;
+    font-size: 12px;
+}
